@@ -1,1 +1,735 @@
 # demo
+<!DOCTYPE html>
+<html lang="ZH">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>扩大你的眼界</title>
+
+<style type="text/css">
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    background-color: black;
+}
+
+/* ***********************分界 ***********************/
+.yanjie{
+  
+    background-color: black;
+}
+
+.bottom{
+    display: flex;
+	align-items: center;
+	height: 68px;
+    width: 100%;
+    background-color: rgb(70, 67, 67);
+}
+
+.logo{
+	margin-left: 22px;
+	width:136px;
+	height:39px;
+    line-height: 35px;
+    color: rgb(253, 252, 252);
+    font-size: 30px;
+}
+
+ .menus{
+    list-style: none;
+	display: flex;
+
+}
+
+.menus li{
+    cursor: pointer;
+	padding: 0 13px;
+	text-align: center;
+	height: 68px;
+	line-height: 68px;
+	background-color: rgb(70, 67, 67);
+    color: rgb(255, 255, 255);
+}
+.menus li:hover{
+   
+    background-color: black;
+
+}
+.opera {
+    flex: 1;
+	display: flex;
+	justify-content: flex-end;
+    width: 60px;
+    text-align: center;
+
+
+}
+
+.opera a{
+    width: 60px;
+    height: 68px;
+    text-decoration: none;
+	color: #ffffff;
+	line-height:68px;
+	display: inline-block;
+    /* 行盒子 */
+	margin-right: 10px;
+
+}
+
+.opera a:hover{
+    
+
+    background-color: black;
+
+}
+/************************ 搜索 *************************/
+.search{
+    line-height: 80px;
+    width: 100%;
+    height: 410px;
+    background-image: url(../images/13.jpg);
+}
+.kuang{
+
+    text-align: center; 
+}
+h1,h3{  
+    color: rgb(255, 253, 253);
+}
+
+h1{
+    font-size: 40px;
+}
+h3{
+    font-size: 30px;
+}
+input{
+    width: 650px;
+    height: 60px;
+    position: absolute;
+    top: 237px; 
+    left: 443px;
+    border-radius:0px 8px 8px 0px  ;
+    font-size: 21px;
+    outline: none;
+}
+
+.hot{
+   
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+span{
+    cursor: pointer;
+    margin-right: 5px; ;
+}
+span:hover{
+    text-decoration: underline;
+}
+
+.tiao .jing{
+    width: 70px;
+    height: 57.15px;
+    position: absolute;
+    top: 238.5px; 
+    left: 375px;
+    cursor: pointer;
+    border-radius: 8px 0px 0px 8px;
+    background-color: rgb(255, 255, 255);
+}
+
+.jing img{
+    margin-top:10px;
+    width: 40px;
+    height: 40px;
+}
+
+
+/* ************************轮播*************************** */
+.center{
+    display: flex;
+    justify-content: center
+}
+.center img{
+    width: 1000px;
+    height: 250px;
+    position: absolute; 
+    opacity: 0;
+}
+
+.center img:nth-of-type(1){
+    opacity:1 ;
+}
+/* **************************散图*********************** */
+/* guding1 */
+.guding1{
+    width: 1375px;
+    height: 230px;
+
+}
+.K li{
+ 
+    color: rgb(252, 252, 252);
+}
+.K li:nth-of-type(1){
+    font-size: 25px;
+}
+.K li:nth-of-type(2){
+    cursor: pointer;
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+    color: rgb(163, 159, 159);
+}
+.guding1{
+    margin-top: 350px;
+}
+.K{
+    font-size: 18px;
+    width: 1200px;
+    margin-left: 150px;
+}
+.hengfu{
+    display: flex;
+    list-style: none;
+}
+
+.kimg{
+    margin-top: 20px;
+    margin-left: 130px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.kimg img:nth-of-type(1){
+    cursor: pointer;
+    width: 283px;
+    height: 150px;
+}
+.kimg img:nth-of-type(2){
+    cursor: pointer;
+    width: 283px;
+    height: 150px;
+}
+.kimg img:nth-of-type(3){
+    cursor: pointer;
+    width: 283px;
+    height: 150px;
+}
+.kimg img:nth-of-type(4){
+    cursor: pointer;
+    width: 283px;
+    height: 150px;
+}
+
+
+/* guding2 */
+.guding2{
+    width: 1375px;
+    height: 230px;
+
+}
+.c li{
+ 
+    color: rgb(252, 252, 252);
+}
+.c li:nth-of-type(1){
+    font-size: 25px;
+}
+.c li:nth-of-type(2){
+    cursor: pointer;
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+    color: rgb(163, 159, 159);
+}
+.guding2{
+    margin-top: 50px;
+}
+.c{
+    font-size: 18px;
+    width: 1200px;
+    margin-left: 150px;
+}
+.chengshi{
+    display: flex;
+    list-style: none;
+}
+
+.cimg{
+    margin-top: 20px;
+    margin-left: 130px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.cimg img:nth-of-type(1){
+    cursor: pointer;
+    width: 283px;
+    height: 150px;
+}
+.cimg img:nth-of-type(2){
+    cursor: pointer;
+    width: 283px;
+    height: 150px;
+}
+.cimg img:nth-of-type(3){
+    cursor: pointer;
+    width: 283px;
+    height: 150px;
+}
+.cimg img:nth-of-type(4){
+    cursor: pointer;
+    width: 283px;
+    height: 150px;
+}
+
+/* guding3 */
+.guding3{
+    width: 1375px;
+    height: 230px;
+
+}
+.z li{
+ 
+    color: rgb(252, 252, 252);
+}
+.z li:nth-of-type(1){
+    font-size: 25px;
+}
+.z li:nth-of-type(2){
+    cursor: pointer;
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+    color: rgb(163, 159, 159);
+}
+.guding3{
+    margin-top: 50px;
+}
+.z{
+    font-size: 18px;
+    width: 1200px;
+    margin-left: 150px;
+}
+.ziran{
+    display: flex;
+    list-style: none;
+}
+
+.zimg{
+    margin-top: 20px;
+    margin-left: 130px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.zimg img:nth-of-type(1){
+    cursor: pointer;
+    width: 283px;
+    height: 150px;
+}
+.zimg img:nth-of-type(2){
+    cursor: pointer;
+    width: 283px;
+    height: 150px;
+}
+.zimg img:nth-of-type(3){
+    cursor: pointer;
+    width: 283px;
+    height: 150px;
+}
+.zimg img:nth-of-type(4){
+    cursor: pointer;
+    width: 283px;
+    height: 150px;
+}
+
+
+/* guding4 */
+.guding4{
+    width: 1375px;
+    height: 230px;
+
+}
+.d li{
+ 
+    color: rgb(252, 252, 252);
+}
+.d li:nth-of-type(1){
+    font-size: 25px;
+}
+.d li:nth-of-type(2){
+    cursor: pointer;
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+    color: rgb(163, 159, 159);
+}
+.guding4{
+    margin-top: 50px;
+}
+.d{
+    font-size: 18px;
+    width: 1200px;
+    margin-left: 150px;
+}
+.dongwu{
+    display: flex;
+    list-style: none;
+}
+
+.dimg{
+    margin-top: 20px;
+    margin-left: 130px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.dimg img:nth-of-type(1){
+    cursor: pointer;
+    width: 283px;
+    height: 150px;
+}
+.dimg img:nth-of-type(2){
+    cursor: pointer;
+    width: 283px;
+    height: 150px;
+}
+.dimg img:nth-of-type(3){
+    cursor: pointer;
+    width: 283px;
+    height: 150px;
+}
+.dimg img:nth-of-type(4){
+    cursor: pointer;
+    width: 283px;
+    height: 150px;
+}
+
+/* guding5*/
+.guding5{
+    width: 1375px;
+    height: 230px;
+
+}
+.s li{
+ 
+    color: rgb(252, 252, 252);
+}
+.s li:nth-of-type(1){
+    font-size: 25px;
+}
+.s li:nth-of-type(2){
+    cursor: pointer;
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+    color: rgb(163, 159, 159);
+}
+.guding5{
+    margin-top: 50px;
+}
+.s{
+    font-size: 18px;
+    width: 1200px;
+    margin-left: 150px;
+}
+.shuixia{
+    display: flex;
+    list-style: none;
+}
+
+.simg{
+    margin-top: 20px;
+    margin-left: 130px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.simg img:nth-of-type(1){
+    cursor: pointer;
+    width: 283px;
+    height: 150px;
+}
+.simg img:nth-of-type(2){
+    cursor: pointer;
+    width: 283px;
+    height: 150px;
+}
+.simg img:nth-of-type(3){
+    cursor: pointer;
+    width: 283px;
+    height: 150px;
+}
+.simg img:nth-of-type(4){
+    cursor: pointer;
+    width: 283px;
+    height: 150px;
+}
+
+.end{
+    width: 100%;
+    height: 210px;
+    margin-top: 150px;
+    background-color: rgb(70, 67, 67);
+}
+
+.endt{
+    width: 70%;
+    height: 70px;
+    margin-left: 15%;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(162, 162, 180);
+    border-bottom-width: 1px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.one{
+    width: 23%;
+    height: 50px;
+    margin-top: 22px;
+}
+.two{
+    width: 30%;
+    height: 50px;
+    margin-top: 22px;
+}
+
+.three{
+    width: 23%;
+    height: 50px;
+    margin-top: 22px;
+}
+label{
+    font-weight: 40px;
+    color: rgb(255, 255, 255);
+}
+a{
+    color: rgb(131, 128, 128);
+}
+a:hover{
+    cursor: pointer;
+text-decoration: underline;
+}
+
+.one a:nth-of-type(1){
+padding:4px ;
+border-right-style: solid;
+border-right-width: 1px;
+}
+
+.two a:nth-of-type(1){
+    padding:4px ;
+    border-right-style: solid;
+    border-right-width: 1px;
+    }
+    
+    .two a:nth-of-type(2){
+        padding:4px ;
+        border-right-style: solid;
+        border-right-width: 1px;
+        }
+.three a:nth-of-type(1){
+    padding:4px ;
+    border-right-style: solid;
+    border-right-width: 1px;
+    
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+</style>
+</head>
+
+<body>
+    <div class="yanjie">
+        <!----------------- 封头 ------------------->
+        <div class="bottom">
+            <div class="logo">
+
+                眼界
+            </div>
+            <ul class="menus">
+                <li><a href="#">视频</a></li>
+                <li><a href="#">图片</a></li>
+                <li><a href="#">常见问题</a></li>
+                <li><a href="index.html">关于我们</a></li>
+            </ul>
+            <div class="opera">
+                <a href="登录页面.html">登录</a>
+                <a href="#">EN</a>
+            </div>
+        </div>
+
+        <!------------------ 搜索 -------------------->
+
+        <div class="search">
+            <!-- <img src="images/13.jpg"> -->
+            <div class="kuang">
+                <h1>扩大你的眼界</h 1>
+                    <h3>让你得到不同的视觉景观</h3>
+                    <div class="tiao">
+                        <input type="text" id="tiao" name="tiao"placeholder="搜索题材">
+                        <div class="jing">
+                            <img src="images/下载.png">
+                        </div>
+                    </div>
+                    <div class="hot">
+                        搜索热词：
+                        <span>城市</span>
+                        <span>星空</span>
+                        <span>自然</span>
+                        <span>8k</span>
+                        <span>自然</span>
+                    </div>
+
+            </div>
+        </div>
+
+        <!-------------------- 轮播 -------------------->
+
+            <div class="center">
+                <img src="./images/14.jpg" alt="">
+                <img src="./images/15.jpg" alt="">
+                <img src="./images/16.jpg" alt="">
+
+            </div>
+
+            <!---------------------- 散图-------------------->
+            <div class="guding1">
+                 <div class="K">
+                        <ul class="hengfu">
+                            <li>8K素材</li>
+                            <li>查看更多</li>
+                        </ul>
+                </div>
+
+                    <div class="kimg">
+                        <img src="images/300.jpg">
+                        <img src="images/300 (1).jpg">
+                        <img src="images/300 (2).jpg">
+                        <img src="images/300 (3).jpg">
+                    </div>
+            </div>
+            <div class="guding2">
+                <div class="c">
+                       <ul class="chengshi">
+                           <li>城市空境</li>
+                           <li>查看更多</li>
+                       </ul>
+               </div>
+
+                   <div class="cimg">
+                       <img src="images/300(4).jpg">
+                       <img src="images/300 (5).jpg">
+                       <img src="images/300 (6).jpg">
+                       <img src="images/300 (7).jpg">
+                   </div>
+              </div>
+              <div class="guding3">
+                <div class="z">
+                       <ul class="ziran">
+                           <li>自然风光</li>
+                           <li>查看更多</li>
+                       </ul>
+               </div>
+
+                   <div class="zimg">
+                       <img src="images/300 (8).jpg">
+                       <img src="images/300 (9).jpg">
+                       <img src="images/300 (10).jpg">
+                       <img src="images/300 (11).jpg">
+                   </div>
+                </div>
+                <div class="guding4">
+                    <div class="d">
+                           <ul class="dongwu">
+                               <li>动物百科</li>
+                               <li>查看更多</li>
+                           </ul>
+                   </div>
+    
+                       <div class="dimg">
+                           <img src="images/300 (12).jpg">
+                           <img src="images/300 (13).jpg">
+                           <img src="images/300 (14).jpg">
+                           <img src="images/300 (15).jpg">
+                       </div>
+                    </div>
+                    <div class="guding5">
+                        <div class="s">
+                               <ul class="shuixia">
+                                   <li>水下世界</li>
+                                   <li>查看更多</li>
+                               </ul>
+                       </div>
+        
+                           <div class="simg">
+                               <img src="images/300(16).jpg">
+                               <img src="images/300 (17).jpg">
+                               <img src="images/300 (18).jpg">
+                               <img src="images/300 (19).jpg">
+                           </div>
+                        </div>
+    <!--------------------- 结尾 ----------------------->
+    <div class="end">
+        <div class="endt">
+            <div class="one">
+                <label>更多信息</label>
+                <a>关于我们</a>
+                <a>我们的宗旨</a>
+            </div>
+            <div class="two">
+                <label>常见问题</label>
+                <a>素材版权</a>
+                <a>素材价格</a>
+                <a>摄影师签约</a>
+            </div>
+            <div class="three">
+                <label>联系我们</label>
+                <a>意见与建议</a>
+                <a>商务合作</a>
+            </div> 
+        </div>
+
+    </div>
+                        
+    </div>
+    <!-- -------------------最后------------------ -->
+    <script src="jquery-2.2.4.js"></script>
+    <script>
+        $(function () {
+
+            let index = 0;	// 当前正在显示的图片
+
+            setInterval(function () {
+
+                $(".center img").eq(index).animate({ "opacity": 0 }, 1000)
+
+                index++
+                if (index >= $(".center img").length) {
+                    index = 0
+                }
+
+                $(".center img").eq(index).animate({ "opacity": 1 }, 1000)
+
+            }, 3000)
+
+        });
+    </script>
+</body>
+
+</html>
