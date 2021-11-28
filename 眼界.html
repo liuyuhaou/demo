@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ZH">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>扩大你的眼界</title>
+    <link href="css\眼界.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="yanjie">
+        <!----------------- 封头 ------------------->
+        <div class="bottom">
+            <div class="logo">
+
+                眼界
+            </div>
+            <ul class="menus">
+                <li><a href="#">视频</a></li>
+                <li><a href="#">图片</a></li>
+                <li><a href="#">常见问题</a></li>
+                <li><a href="index.html">关于我们</a></li>
+            </ul>
+            <div class="opera">
+                <a href="登录页面.html">登录</a>
+                <a href="#">EN</a>
+            </div>
+        </div>
+
+        <!------------------ 搜索 -------------------->
+
+        <div class="search">
+            <!-- <img src="images/13.jpg"> -->
+            <div class="kuang">
+                <h1>扩大你的眼界</h 1>
+                    <h3>让你得到不同的视觉景观</h3>
+                    <div class="tiao">
+                        <input type="text" id="tiao" name="tiao"placeholder="搜索题材">
+                        <div class="jing">
+                            <img src="images/下载.png">
+                        </div>
+                    </div>
+                    <div class="hot">
+                        搜索热词：
+                        <span>城市</span>
+                        <span>星空</span>
+                        <span>自然</span>
+                        <span>8k</span>
+                        <span>自然</span>
+                    </div>
+
+            </div>
+        </div>
+
+        <!-------------------- 轮播 -------------------->
+
+            <div class="center">
+                <img src="./images/14.jpg" alt="">
+                <img src="./images/15.jpg" alt="">
+                <img src="./images/16.jpg" alt="">
+
+            </div>
+
+            <!---------------------- 散图-------------------->
+            <div class="guding1">
+                 <div class="K">
+                        <ul class="hengfu">
+                            <li>8K素材</li>
+                            <li>查看更多</li>
+                        </ul>
+                </div>
+
+                    <div class="kimg">
+                        <img src="images/300.jpg">
+                        <img src="images/300 (1).jpg">
+                        <img src="images/300 (2).jpg">
+                        <img src="images/300 (3).jpg">
+                    </div>
+            </div>
+            <div class="guding2">
+                <div class="c">
+                       <ul class="chengshi">
+                           <li>城市空境</li>
+                           <li>查看更多</li>
+                       </ul>
+               </div>
+
+                   <div class="cimg">
+                       <img src="images/300(4).jpg">
+                       <img src="images/300 (5).jpg">
+                       <img src="images/300 (6).jpg">
+                       <img src="images/300 (7).jpg">
+                   </div>
+              </div>
+              <div class="guding3">
+                <div class="z">
+                       <ul class="ziran">
+                           <li>自然风光</li>
+                           <li>查看更多</li>
+                       </ul>
+               </div>
+
+                   <div class="zimg">
+                       <img src="images/300 (8).jpg">
+                       <img src="images/300 (9).jpg">
+                       <img src="images/300 (10).jpg">
+                       <img src="images/300 (11).jpg">
+                   </div>
+                </div>
+                <div class="guding4">
+                    <div class="d">
+                           <ul class="dongwu">
+                               <li>动物百科</li>
+                               <li>查看更多</li>
+                           </ul>
+                   </div>
+    
+                       <div class="dimg">
+                           <img src="images/300 (12).jpg">
+                           <img src="images/300 (13).jpg">
+                           <img src="images/300 (14).jpg">
+                           <img src="images/300 (15).jpg">
+                       </div>
+                    </div>
+                    <div class="guding5">
+                        <div class="s">
+                               <ul class="shuixia">
+                                   <li>水下世界</li>
+                                   <li>查看更多</li>
+                               </ul>
+                       </div>
+        
+                           <div class="simg">
+                               <img src="images/300(16).jpg">
+                               <img src="images/300 (17).jpg">
+                               <img src="images/300 (18).jpg">
+                               <img src="images/300 (19).jpg">
+                           </div>
+                        </div>
+    <!--------------------- 结尾 ----------------------->
+    <div class="end">
+        <div class="endt">
+            <div class="one">
+                <label>更多信息</label>
+                <a>关于我们</a>
+                <a>我们的宗旨</a>
+            </div>
+            <div class="two">
+                <label>常见问题</label>
+                <a>素材版权</a>
+                <a>素材价格</a>
+                <a>摄影师签约</a>
+            </div>
+            <div class="three">
+                <label>联系我们</label>
+                <a>意见与建议</a>
+                <a>商务合作</a>
+            </div> 
+        </div>
+
+    </div>
+                        
+    </div>
+    <!-- -------------------最后------------------ -->
+    <script src="jquery-2.2.4.js"></script>
+    <script>
+        $(function () {
+
+            let index = 0;	// 当前正在显示的图片
+
+            setInterval(function () {
+
+                $(".center img").eq(index).animate({ "opacity": 0 }, 1000)
+
+                index++
+                if (index >= $(".center img").length) {
+                    index = 0
+                }
+
+                $(".center img").eq(index).animate({ "opacity": 1 }, 1000)
+
+            }, 3000)
+
+        });
+    </script>
+</body>
+
+</html>

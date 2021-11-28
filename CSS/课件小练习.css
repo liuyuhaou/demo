@@ -1,0 +1,47 @@
+#box{
+    width: 300px;
+    height: 200px;
+    border: solid rgb(236, 6, 148);
+    box-shadow: #000000 5px 5px 5px;
+    margin: 200px auto;
+    border-radius:0px 12px 0px 12px;
+    overflow: hidden;
+    background-color: rgba(245, 233, 229, 0.884);
+}
+
+#title{
+    
+    background-color: rgb(248, 2, 228);
+    padding-left:  5px; 
+
+}
+
+label {
+    display: inline-block;
+    width: 80px;
+    text-align: center; 
+    line-height: 65px;
+    margin-left:  14px; 
+ 
+}
+input{
+    margin-top: 10px;
+    height: 21px;
+    border: solid rgb(236, 6, 148);
+    border-radius: 3px;
+    background-color: rgba(245, 233, 229, 0.884);
+}
+
+input[type="submit"]:hover{
+
+    background-color: rgb(242, 6, 246);
+}
+input[type="submit"]{
+    width: 250px;
+    height: 25px;
+    border-radius: 2px;
+    margin-left: 25px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(246, 6, 138);
+    cursor: pointer;
+}

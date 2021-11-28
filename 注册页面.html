@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册页面</title>
+<link href="css\注册.css"type="text/css"rel="stylesheet">
+<script src="jquery-2.2.4.js"></script>
+</head>
+<body>
+<div>
+    <div class="center">
+        <img src="images1/10.jpg" id="image" width="1476" height="1080">
+        <img src="images1/11.jpg" id="image" width="1476" height="1080">
+        <img src="images1/12.jpg" id="image" width="1476" height="1080">
+        <img src="images1/13.jpg" id="image" width="1476" height="1080">
+        <img src="images1/14.jpg" id="image" width="1476" height="1080">
+        <img src="images1/15.jpg" id="image" width="1476" height="1080">
+        <img src="images1/16.jpg" id="image" width="1476" height="1080">
+        <img src="images1/17.jpg" id="image" width="1476" height="1080">
+        <img src="images1/18.jpg" id="image" width="1476" height="1080">
+        <div class="bottom">
+            <ul class="menus">
+                <li><a href="登录页面.html">登录</a></li>
+                <li>关于我们</li>
+            </ul>
+        <div>
+    <div id="box">
+        <div id="title">
+            新用户注册
+            </div>
+            <form action="https://fiime.cn/user/phone-login-register?code=undefined&preurl=%2F">
+            <div>
+                <label for="username">账号：</label>
+                <input type="text" name="username" id="username">
+            </div>
+            <div>
+                <label for="password">密码：</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <div>
+            <label for="gender">性别：</label>
+            <input type="radio"name="gender"id="male">男
+            <input type="radio" name="gender"id="fmale">女
+            </div>
+            
+            <div>
+                <label for="age">年龄：</label>
+                <input type="number" name="age" id="age">
+            </div>
+            <div>
+                <label for="header">头像：</label>
+                <input type="file"name="header"id="header">
+            </div>
+            <div>
+                <label for="addr">地址：</label>
+               省：<select name="addr" id="addr">
+                <option value="hn">河南</option>
+                <option value="hb">湖北</option>
+               </select>
+               市：<select>                
+                <option value="zz">郑州</option>
+                <option value="xy">信阳</option>
+            </select>
+            </div>
+            <div>
+                <label for="intro">个人介绍：</label>
+                <textarea name="intro" id="intro" cols="30" rows="5"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="提交注册"> 
+            </div>
+
+</form>
+
+        
+    </div>
+  </div> 
+  <script>
+    $(function() {
+        
+        let index = 0;	// 当前正在显示的图片
+        
+        setInterval(function() {
+            
+            $("img").eq(index).animate({"opacity": 0}, 1000)
+            
+            index++
+            if(index >= $("img").length) {
+                index = 0
+            }
+            
+            $("img").eq(index).animate({"opacity": 1}, 1000)
+            
+        }, 3000)
+        
+    });
+</script> 
+</body>
+</html>

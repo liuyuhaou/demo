@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+}
+.zhengti{
+    display: flex;
+    height: 100%;
+}
+
+.zuo{
+        width: 260px;
+        height: 100%;
+        background-color: rgb(20, 40, 221);
+        
+}
+
+.zuo .shang{
+
+        width: 260px;
+        height: 70px;
+        color: rgb(255, 251, 251);
+        font-size: 20px;
+        text-align: center;
+        line-height: 70px;
+        letter-spacing: 5px;
+        background-color: rgb(38, 101, 197);
+    
+    
+}
+
+.zuo .xia{
+    height: 100%;
+    font-size: 18px;    
+    text-align: center;
+    color: rgb(247, 247, 247);
+    line-height: 50px;
+}
+.zuo .xia ul{
+    list-style: none;
+}
+
+
+.xia ul li:hover{
+    cursor: pointer;
+    background-color: #ddd;
+    color: black;
+
+}
+.xia ul li.active{
+    background-color: #fff;
+    color: black;
+    font-weight: bolder;
+}
+
+.you{
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+.you .tou, .you .di{
+
+    background-color: rgb(38, 101, 197);
+    color: rgb(255, 254, 254);
+    text-align: center;
+    line-height: 70px;
+
+}
+
+.you .tou{
+    display: flex;
+    justify-content: space-between;
+}
+
+.you .zhong{
+    flex: 1;
+}

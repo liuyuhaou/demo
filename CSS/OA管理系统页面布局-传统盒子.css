@@ -1,0 +1,78 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+}
+
+.zhengti{
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+
+
+}
+
+.zuo{
+    float: left;
+    width: 260px;
+    height: 1000px;
+    float: left;
+    background-color: rgb(20, 40, 221);
+    
+}
+.zuo .shang{
+    width: 260px;
+    height: 70px;
+    color: rgb(255, 251, 251);
+    font-size: 20px;
+    text-align: center;
+    line-height: 70px;
+    letter-spacing: 5px;
+    background-color: rgb(38, 101, 197);
+}
+
+.zuo .xia{
+    font-size: 18px;    
+    text-align: center;
+    color: rgb(247, 247, 247);
+    line-height: 50px;
+}
+
+.you{
+    float:right;
+    width: 740px;
+    height: 100%;
+
+}
+.you .tou , .you .di{
+
+    height: 72px;
+    background-color: rgb(38, 101, 197);
+    color: rgb(255, 254, 254);
+    text-align: center;
+    line-height: 70px;
+}
+
+.you .zhong{
+    height: 855px;
+	text-align: center;
+	line-height: 200px;
+	background-color: #efefef;
+}
+
+.zuo .xia ul{
+    list-style: none;
+}
+
+
+.xia ul li:hover{
+    cursor: pointer;
+    background-color: #ddd;
+    color: black;
+
+}

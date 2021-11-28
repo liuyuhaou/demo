@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>猜数字</title>
+    <script type="text/javascript">
+
+    var b=Math.random()*100;
+    var b1=Math.ceil(b);
+	alert("来宝贝，让我们来猜数字")
+	while(true){
+         a=prompt("请输入一个1~100之间数字");
+        if(a<b1){
+            alert("您没有猜中！稍微小了一点点哦！！");
+        } else if(a>b1) {
+            alert("您没有猜中！稍微大了一点点哦！！");
+        }
+		else {
+	alert("恭喜您,您猜中了"); 
+    break
+	}
+	}
+    
+    </script>
+</head>
+<body>
+</body>
+</html>

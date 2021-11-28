@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>用户注册</title>
+	<style type="text/css">
+body{background-image:url(images/5.jpg)}
+
+
+</style>
+</head>
+<body>
+    <h2>用户注册</h2>
+    <form action="" method="post">
+       
+        <input type="hidden" name="uid" value="9527" />
+        <table border="0" cellpadding="0" cellspacing="0" width="400px">
+            <tr>
+                <td align="right"><label for="name">姓名：</label></td>
+                <td><input type="text" name="name" id="name"/></td>
+            </tr>
+            <tr>
+                <td align="right">用户名：</td>
+                <td><input type="text" name="username"  readonly="readonly" value="赵明超"/></td>
+            </tr>
+            <tr>
+                <td align="right">密码：</td>
+                <td><input type="password" name="pwd"/></td>
+            </tr>
+            <tr>
+                <td align="right">确认密码：</td>
+                <td><input type="password" name="repwd"/></td>
+            </tr>
+            <tr>
+                <td align="right">电子邮箱：</td>
+                <td><input type="text" name="email"/></td>
+            </tr>
+            <tr>
+                <td align="right">性别：</td>
+                <td>
+                    <input type="radio" name="sex" value="male" checked="checked" id="male" />
+                    <label for="male">男</label>&nbsp;
+                    <input type="radio" name="sex" value="female"/></input>女
+                </td>
+            </tr>
+            <tr>
+                <td align="right">头像：</td>
+                <td><input type="file" name="touxiang"/></td>
+            </tr>
+            <tr>
+                <td align="right">爱好：</td>
+                <td>
+                    <input type="checkbox" name="hobby" value="eat" checked="checked" />打球&nbsp;&nbsp;
+                    <input type="checkbox" name="hobby" value="sleep" />听歌&nbsp;&nbsp;
+                    <input type="checkbox" name="hobby" value="doudou" />其他&nbsp;&nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td align="right">出生日期：</td>
+                <td>
+                    <input type="text" name="year" size="10"/>年&nbsp;
+                    <select name="month">
+                        <option value="0" selected="selected">--月份--</option>
+                        <option value="1">一月</option>
+                        <option value="2">二月</option>
+                        <option value="3">三月</option>
+                        <option value="4">四月</option>
+						<option value="4">五月</option>
+                        <option value="6">六月</option>
+					    <option value="7">七月</option>
+                        <option value="8">八月</option>
+                        <option value="9">九月</option>
+                        <option value="10">十月</option>
+                        <option value="11">十一月</option>
+                        <option value="12">十二月</option>
+                    </select>月&nbsp;&nbsp;
+                    <input type="text" name="day" size="6"/>日
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="注册" disabled="disabled" />&nbsp;&nbsp;
+                   &nbsp;&nbsp;
+                    <!--<input type="button" value="普通按钮"/>
+                --></td>
+            </tr>
+        </table>    
+    </form>
+</body>
+</html>
